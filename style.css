@@ -1,20 +1,28 @@
 *{
     font-family: sans-serif;
     user-select: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 .product-item{
     border-radius: 0.5rem;
     border: none;
     outline: none;
     box-shadow: 0 0 10px rgba(117,117,117,.2);
     margin-bottom: 2rem;
-    margin-right: 2rem;
+    border: 1px solid rgba(117,117,117,.2);
+    height: 28rem;
+    width: 19rem;
 }
+
 .product-img{
     border-radius: 0.5rem;
     position: relative;
     overflow: hidden;
 }
+
 .btns{
     position: absolute;
     left: 0;
@@ -23,37 +31,127 @@
     font-weight: 300px;
     transition: all 0.3s ease-in-out;
 }
+
 .btns button{
     border: none;
     background-color: rgb(39,39,39);
     color: #fff;
     transition: all 0.3s ease-in-out;
 }
+
 .btns button:hover{
     color: #fcb941;
 }
+
 .product-img:hover .btns{
     bottom: 0;
 }
+
 .heart-icon{
     position: absolute;
     top: 15px;
     right: 15px;
     font-size: 18px;
 }
+
 .product-type{
     font-size: 15px;
     opacity: 0.8;
 }
+
 .product-name{
     transition: all 0.3s ease-in-out;
 }
+
 .product-name:hover{
     color: #fcb941!important;
 }
+
 .product-price{
     color: #fcb941;
 }
+
 .rating{
     font-size: 15px;
 }
+
+.footer{
+    background-color: #24262b;
+    padding: 70px 0;
+    margin-top: 5rem;
+}
+
+.container-2{
+    max-width: 1170px;
+    margin: auto;
+}
+
+ul{
+    list-style: none;
+}
+
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4{
+    font-size: 20px;
+    color: #ffffff;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.footer-col h4::before{
+    content:'';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+
+.footer-col ul li{
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition-delay: 0.1s;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+}
+
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 10px;
+}
+
+.footer-col .social-links a{
+   display: inline-block;
+   height: 40px;
+   width: 40px;
+   background-color: rgba(255, 255, 255, 0.2);
+   margin-right: 10px;
+   margin-bottom: 10px;
+   text-align: center;
+   line-height: 40px;
+   border-radius: 50%;
+   color: #ffffff;
+   transition-delay: 0.1s;
+   transition-duration: 0.5s;
+   transition-timing-function: ease;
+
+}
+
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+}
+
